@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gantari');
+* {
+    font-family: 'Gantari';
+}
+
+/* body {
+
+  background: url("/src/images/image.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+} */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: url("/src/images/light-bg-5.svg")
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: url("/src/images/dark-bg.svg")
+  }
+}
+
+
+
+#background-image {
+  background:var(--background) -25px -50px;
+  position:fixed ;
+  top:0;
+  width:100%;
+  z-index:0;
+  height:100%;
+  background-size: calc(100% + 40rem);
+}
+
+
+
+/* #background { */
+  /* background:url("/src/images/image.png") -25px -50px; */
+  /* position:fixed; */
+  /* top:0; */
+  /* left:0; */
+  /* width:100%; */
+  /* z-index:0; */
+  /* height:100%; */
+  /* background-size: calc(100% + 50px); */
+  /* object-fit: cover; */
+  /* background-size: 100% 1005; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+/* } */
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
